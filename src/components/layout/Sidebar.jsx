@@ -32,7 +32,7 @@ export const Sidebar = () => {
   const navItems = [
     { icon: LayoutDashboard, label: 'Dashboard', route: '/dashboard', adminOnly: false },
     { icon: Server, label: 'Agents', route: '/agents', adminOnly: false },
-    { icon: Database, label: 'Databases', route: '/connections', adminOnly: false },
+    { icon: Database, label: 'Databases', route: '/databases', adminOnly: false },
     { icon: Cloud, label: 'Cloud', route: '/cloud', adminOnly: false },
     { icon: HardDrive, label: 'Infrastructure', route: '/infra', adminOnly: false },
     { icon: Brain, label: 'ML / AI', route: '/ml', adminOnly: false },

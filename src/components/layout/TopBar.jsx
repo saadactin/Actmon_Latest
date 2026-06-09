@@ -27,6 +27,7 @@ export const TopBar = () => {
     if (part.toLowerCase() === 'dashboard') return 'Dashboard';
     if (part.toLowerCase() === 'agents') return 'Agents';
     if (part.toLowerCase() === 'connections') return 'Databases';
+    if (part.toLowerCase() === 'databases') return 'Databases';
     if (part.toLowerCase() === 'cloud') return 'Cloud';
     if (part.toLowerCase() === 'infra') return 'Infrastructure';
     if (part.toLowerCase() === 'ml') return 'ML / AI';

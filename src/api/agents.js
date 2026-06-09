@@ -84,3 +84,9 @@ export const exportCSV = (agentName, hours = 24) => {
     alert('Failed to export CSV: ' + err.message);
   });
 };
+
+export const registerAgent = async (payload) => {
+  // Best-effort registration endpoint — backend may implement '/agents/register'
+  const response = await client.post('/agents/register', payload);
+  return response.data;
+};
