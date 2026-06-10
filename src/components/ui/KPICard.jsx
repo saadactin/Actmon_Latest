@@ -32,7 +32,7 @@ export const KPICard = ({
         </div>
         {icon && (
           <div className="p-2 bg-[#DEECF9] rounded-lg text-brand-primary flex-shrink-0">
-            {icon}
+            {React.isValidElement(icon) ? icon : React.createElement(icon, { className: 'h-5 w-5' })}
           </div>
         )}
       </div>

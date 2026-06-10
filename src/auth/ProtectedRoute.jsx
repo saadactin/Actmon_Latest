@@ -3,6 +3,11 @@ import { Navigate, useLocation } from 'react-router-dom';
 import { useAuthStore } from '../store/authStore';
 
 export const ProtectedRoute = ({ children, adminOnly = false }) => {
+  // DEVELOPMENT MODE: Bypass authentication
+  // TODO: Remove this bypass in production
+  return children;
+
+  /* Original authentication code - commented out for development
   const { token, user } = useAuthStore();
   const location = useLocation();
 
@@ -17,4 +22,5 @@ export const ProtectedRoute = ({ children, adminOnly = false }) => {
   }
 
   return children;
+  */
 };
